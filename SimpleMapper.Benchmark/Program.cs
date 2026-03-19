@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Engines;
 using BenchmarkDotNet.Jobs;
@@ -9,7 +8,7 @@ using SimpleMapper.Benchmark.Models;
 
 namespace SimpleMapper.Benchmark
 {
-    [SimpleJob(RuntimeMoniker.CoreRt31)]
+    [SimpleJob(RuntimeMoniker.Net80)]
     public class SimpleBenchmark
     {
         private SimpleModel[] _models;
